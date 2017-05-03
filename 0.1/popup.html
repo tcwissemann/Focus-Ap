@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="iso-8859-1">
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <h1 id = "title">Chi</h1>
+        <div id="buttons">
+            <button id="notify">Toggle Notifications</button>
+        </div>
+    </body>
+    <script src="popup.js"></script>
+</html>
+<style>
+    #title {
+        text-align: center;
+        font-family: 'raleway', sans-serif;
+    }
+    #buttons {
+        text-align: center;
+    }
+    
+    #notify {
+        text-align: center;
+        position: center;
+        outline: none;
+        background: transparent;
+        width: 170px;
+        height: 64px;
+        border: 2px solid #000;
+        color: #000;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'raleway', sans-serif;
+        animation: state1 .8s;
+        -webkit-animation-fill-mode: forwards;
+    }
+    
+    #notify:hover {
+        animation: state2 .8s;
+        -webkit-animation-fill-mode: forwards;
+    }
+    
+    @keyframes state1 {
+        from { 
+            border-radius: 45px;
+        }
+        to {
+        
+        }
+    }
+    
+    @keyframes state2 {
+        from {
+          
+        } 
+        to {
+            border-radius: 45px;
+        }
+    }    
+</style>
