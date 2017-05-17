@@ -9,9 +9,9 @@ function startClock() {
     ++secs;
     var seconds = secs;
     clock.innerHTML = secs;
+    while(secs == 1800) {
+      alert('Focus!');
+      secs = 0;
+    }
   }
-}
-
-function alertUser() {
-  alert('Focus');
 }
