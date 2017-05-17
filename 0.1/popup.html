@@ -8,8 +8,9 @@
     <body>
         <h1 id="title">FocusBoost</h1>
         <div id="buttons">
-            <button id="notify" onclick="startClock();">Start Studying</button>
+            <button id="notify" onclick="startClock()">Start Studying</button>
         </div>
+        <div id="timer"></div>
     </body>
     <script src="popup.js"></script>
 </html>
@@ -28,7 +29,6 @@
     #buttons {
         text-align: center;
     }
-
     #notify {
         text-align: center;
         position: center;
@@ -51,19 +51,15 @@
         -webkit-animation-fill-mode: forwards;
         cursor: pointer;
     }
-
     @keyframes state1 {
         from {
             border-radius: 45px;
         }
         to {
-
         }
     }
-
     @keyframes state2 {
         from {
-
         }
         to {
             border-radius: 45px;
