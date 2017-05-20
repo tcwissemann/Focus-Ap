@@ -1,8 +1,16 @@
 var btn = document.getElementById("notify");
 var clock = document.getElementById("timer");
-btn.onclick = startClock;
+btn.onclick = startWork;
 
-function startClock() {
+function startWork() {
+  el = document.documentElement,
+  rfs =
+        el.requestFullScreen
+        || el.webkitRequestFullScreen
+        || el.mozRequestFullScreen
+  ;
+  rfs.call(el);
+//^gets fullscreen
   var timer = setInterval(counter, 1000);
   var secs = 0;
   function counter() {
