@@ -4,11 +4,7 @@ btn.onclick = startWork;
 
 function startWork() {
   el = document.documentElement,
-  rfs =
-        el.requestFullScreen
-        || el.webkitRequestFullScreen
-        || el.mozRequestFullScreen
-  ;
+  rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen;
   rfs.call(el);
 //^gets fullscreen
   var timer = setInterval(counter, 1000);
